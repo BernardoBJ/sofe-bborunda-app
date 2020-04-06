@@ -20,7 +20,7 @@
         <Paises::Filter @paises={{@paises}} @sort={{this.sort}} @query={{this.query}} as |results|>
             {{#each results as |pais|}}
             <Pais @cases={{pais.cases}} @deaths={{pais.deaths}} @country={{pais.country}}
-                @todayCases={{pais.todayCases}} @todayDeaths={{pais.todayDeaths}} />
+                @todayCases={{pais.todayCases}} @todayDeaths={{pais.todayDeaths}} @id={{pais.id}} />
             {{/each}}
         </Paises::Filter>
     </ul>

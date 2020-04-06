@@ -12,7 +12,7 @@ export default class LineChartComponent extends Component {
         var chart = am4core.create("linechart", am4charts.XYChart);
 
         if (this.nombrePais != undefined) {
-            axios.get('http://api.coronastatistics.live/timeline/' + this.nombrePais)
+            axios.get('http://api.coronastatistics.live/timeline/' + this.GetName(this.nombrePais))
                 .then((response) => {
                     chart.data = response.data.data.timeline;
 
@@ -144,10 +144,11 @@ export default class LineChartComponent extends Component {
                     console.log(error);
                 });
         }
+    }
 
-
-
-
+    GetName(name) {
+        if (name == 'USA') { name = 'us' }
+        return name;
     }
 }
 

@@ -21,7 +21,7 @@ export default class PaisesFilterComponent extends Component {
         }
 
         if (query) {
-            paises = paises.filter(pais => pais.country.includes(query));
+            paises = paises.filter(pais => pais.country.toLowerCase().includes(query.toLowerCase()));
         }
 
         return paises;
