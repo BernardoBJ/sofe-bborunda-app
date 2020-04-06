@@ -1,32 +1,49 @@
 # sofe-bborunda-app
 
 Se espera que los participantes realicen una Aplicación Web (Ember) como se muestra en la siguiente pagina https://coronastatistics.live/
+
 * Utilizar el API de Corona Statistics Live y hacer uso de los Endpoints especificados.
 
     o http://api.coronastatistics.live/all
 
     o http://api.coronastatistics.live/countries
-    
+
     o Ordenar Paises por
+
          Infectados en total
+
          Infectados del dia de hoy
+
          Muertes en total
+
          Muertes del dia de hoy
+
          Recuperados
+
          Activos (Infectados Vivos)
+
          Críticos
+
     o http://api.coronastatistics.live/countries/{country_name}
+
     o http://api.coronastatistics.live/timeline
+
     o http://api.coronastatistics.live/timeline/global
+
     o http://api.coronastatistics.live/timeline/{country_name}
+
 * GitHub (sofe-cmarin-app, primer letra de su nombre y el apellido) para poder revisar el código.
 * Realizar una documentación básica en el README de su proyecto, se pueden apoyar de la siguiente pagina
 https://www.makeareadme.com/.
 * La aplicación debe de contener la siguiente información:
     o Datos globales
+    
     o Mapa con los datos
+
     o Lista de Países
+
     o Gráfica diaria global de infectados, muertos y recuperados
+
     o Datos desglosados por país
 
 ## Requisitos previos
