@@ -17,15 +17,18 @@ export default class PieChartComponent extends Component {
                     var data = [];
                     data.push({
                         concept: "Muertos",
-                        quantity: response.data.deaths
+                        quantity: response.data.deaths,
+                        color: am4core.color("red")
                     });
                     data.push({
                         concept: "Recuperados",
-                        quantity: response.data.recovered
+                        quantity: response.data.recovered,
+                        color: am4core.color("green")
                     });
                     data.push({
                         concept: "Activos",
-                        quantity: response.data.critical
+                        quantity: response.data.critical,
+                        color: am4core.color("yellow")
                     });
                     chart.data = data;
 
@@ -38,6 +41,7 @@ export default class PieChartComponent extends Component {
                     pieSeries.slices.template.strokeOpacity = 1;
                     pieSeries.labels.template.disabled = true;
                     pieSeries.ticks.template.disabled = true;
+                    pieSeries.slices.template.propertyFields.fill = "color";
 
                     // Animacion inicial
                     pieSeries.hiddenState.properties.opacity = 1;

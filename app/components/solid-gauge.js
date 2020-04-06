@@ -10,6 +10,12 @@ export default class SolidGaugeComponent extends Component {
     didInsertElement() {
         // Crear instancia
         var chart = am4core.create("solidgauge", am4charts.RadarChart);
+        chart.colors.list = [
+            am4core.color("yellow"),
+            am4core.color("blue"),
+            am4core.color("green"),
+            am4core.color("red")
+        ];
 
         if (this.nombrePais != undefined) {
             axios.get('http://api.coronastatistics.live/countries/' + this.nombrePais)
