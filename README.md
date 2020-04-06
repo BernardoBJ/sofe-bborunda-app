@@ -1,34 +1,57 @@
 # sofe-bborunda-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Se espera que los participantes realicen una Aplicación Web (Ember) como se muestra en la siguiente pagina https://coronastatistics.live/
+• Utilizar el API de Corona Statistics Live y hacer uso de los Endpoints especificados.
+    o http://api.coronastatistics.live/all
+    o http://api.coronastatistics.live/countries
+    o Ordenar Paises por
+         Infectados en total
+         Infectados del dia de hoy
+         Muertes en total
+         Muertes del dia de hoy
+         Recuperados
+         Activos (Infectados Vivos)
+         Críticos
+    o http://api.coronastatistics.live/countries/{country_name}
+    o http://api.coronastatistics.live/timeline
+    o http://api.coronastatistics.live/timeline/global
+    o http://api.coronastatistics.live/timeline/{country_name}
+• GitHub (sofe-cmarin-app, primer letra de su nombre y el apellido) para poder revisar el código.
+• Realizar una documentación básica en el README de su proyecto, se pueden apoyar de la siguiente pagina
+https://www.makeareadme.com/.
+• La aplicación debe de contener la siguiente información:
+    o Datos globales
+    o Mapa con los datos
+    o Lista de Países
+    o Gráfica diaria global de infectados, muertos y recuperados
+    o Datos desglosados por país
 
-## Prerequisites
+## Requisitos previos
 
-You will need the following things properly installed on your computer.
+Necesitara tener los siguientes elementos instalados en su computadora.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
-## Installation
+## Instalación
 
-* `git clone <repository-url>` this repository
+* `git clone <repository-url>` este repositorio
 * `cd sofe-bborunda-app`
 * `npm install`
 
-## Running / Development
+## Ejecusion / Desarrollo
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+* Visite su app en [http://localhost:4200](http://localhost:4200).
+* Visite su tests en [http://localhost:4200/tests](http://localhost:4200/tests).
 
-### Code Generators
+### Generador de codigo
 
-Make use of the many generators for code, try `ember help generate` for more details
+Utilice los numerosos generadores de código, intente `ember help generate` para obtener más detalles.
 
-### Running Tests
+### Ejecucion de pruebas
 
 * `ember test`
 * `ember test --server`
@@ -39,19 +62,19 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
 
-### Building
+### Compilacion
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Implementación
 
-Specify what it takes to deploy your app.
+Depende del servidor y caracteristicas de su infraestructura
 
-## Further Reading / Useful Links
+## Lecturas adicionales / Enlaces útiles
 
 * [ember.js](https://emberjs.com/)
 * [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
+* Extensiones de navegador de desarrollo
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
