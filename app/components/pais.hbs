@@ -1,0 +1,20 @@
+<li class="list-group-item pt-1 pb-1">
+    <a href="/pais/{{ @country }}">
+        <div class="row pt-0 pb-0">
+            <div class="col-2 pt-0 pb-0">
+                <img style="height: 40px; width: 50px;" src="../assets/flags/mx.svg" alt="{{ @country }}" />
+            </div>
+            <div class="col-6 pt-0 pb-0 pr-0">
+                <h6 class="mt-0 mb-0">{{ @country }}</h6>
+                <p class="mt-0 mb-0">
+                    <small class="text-blue">{{ @cases }} Casos</small> -
+                    <small class="text-danger">{{ @deaths }} Muertos</small>
+                </p>
+            </div>
+            <div class="col-4 pt-0 pb-0 text-right">
+                <p class="mt-0 mb-0"><small class="text-blue">+{{ @todayCases }} Casos</small></p>
+                <p class="mt-0 mb-0"><small class="text-danger">+{{ @todayDeaths }} Muertos</small></p>
+            </div>
+        </div>
+    </a>
+</li>

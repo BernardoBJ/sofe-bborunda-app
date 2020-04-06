@@ -1,0 +1,27 @@
+<div class="form-group row pr-2">
+    <div class="col-md-8 col-8">
+        <Input @value={{this.query}} class="form-control" placeholder="Buscar {{ @paises.length }} paises afectados" />
+    </div>
+    <div class="col-md-4 col-4">
+        <select class="custom-select" onchange={{action 'changeOrder' value="target.value"}}>
+            <option selected="" disabled="">Ordenar</option>
+            <option value="cases">Infectados en total</option>
+            <option value="todayCases">Infectados del día de hoy</option>
+            <option value="deaths">Muertes en total</option>
+            <option value="todayDeaths">Muertes del día de hoy</option>
+            <option value="recovered">Recuperados</option>
+            <option value="alive">Activos (Infectados Vivos)</option>
+            <option value="critial">Críticos</option>
+        </select>
+    </div>
+</div>
+<div style="overflow-y: auto; max-height: 445px;">
+    <ul class="list-group pr-2 pb-2">
+        <Paises::Filter @paises={{@paises}} @sort={{this.sort}} @query={{this.query}} as |results|>
+            {{#each results as |pais|}}
+            <Pais @cases={{pais.cases}} @deaths={{pais.deaths}} @country={{pais.country}}
+                @todayCases={{pais.todayCases}} @todayDeaths={{pais.todayDeaths}} />
+            {{/each}}
+        </Paises::Filter>
+    </ul>
+</div>

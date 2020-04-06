@@ -1,0 +1,43 @@
+<div class="pt-2 pr-2 pl-2">
+
+    <div class="row mb-3">
+        <div class="col-5 text-right">
+            <img style="height: 80px; width: 120px;" src="../assets/flags/mx.svg" alt="{{@model.nombrePais}}" />
+        </div>
+        <div class="col-7 text-left">
+            <h2 class="card-title mt-3">Estadisticas de {{@model.nombrePais}}</h2>
+        </div>
+    </div>
+
+    <Resumenes @nombrePais={{@model.nombrePais}} />
+
+    <div class="row">
+        <div class="col col-12">
+            <div class="card mt-2 pt-2 pl-2">
+                <h5 class="card-title">Historial de infecciones</h5>
+                <Line-Chart @nombrePais={{@model.nombrePais}} />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col col-12 col-lg-4">
+            <div class="card mt-2 pt-2 pl-2">
+                <h5 class="card-title">Distribucion de tasas</h5>
+                <Solid-Gauge @nombrePais={{@model.nombrePais}} />
+            </div>
+        </div>
+        <div class="col col-12 col-lg-4">
+            <div class="card mt-2 pt-2 pl-2">
+                <h5 class="card-title">Distribución de infecciones en {{@model.nombrePais}}</h5>
+                <Pie-Chart @nombrePais={{@model.nombrePais}} />
+            </div>
+        </div>
+        <div class="col col-12 col-lg-4">
+            <div class="card mt-2 pt-2 pl-2">
+                <h5 class="card-title">Tasas de infección</h5>
+                <Tasas @nombrePais={{@model.nombrePais}} />
+            </div>
+        </div>
+    </div>
+</div>

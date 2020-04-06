@@ -1,0 +1,19 @@
+<div class="card p-2">
+    {{#if @quantity}}
+    <h5 class="header-title">{{@title}}</h5>
+    <div class="text-md-right text-center">
+        <span class="badge badge-{{@color}} badge-pill float-md-left m-md-3 mt-2">
+            {{@trending}} <i class="fas fa-hand-point-up"></i>
+        </span>
+        <h2 class="font-weight-normal"> {{@quantity}} </h2>
+        <p class="text-muted">{{@subtitle}}</p>
+    </div>
+    <div class="progress progress-bar-alt-{{@color}} progress-sm m-0" style="height: 5px;">
+        <div role="progressbar" class="progress-bar bg-{{@color}}" style="width: 100%;"></div>
+    </div>
+    {{else}}
+    <div class="fa-3x text-center">
+        <i class="fas fa-circle-notch fa-spin m-2"></i>
+    </div>
+    {{/if}}
+</div>

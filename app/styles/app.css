@@ -1,0 +1,10 @@
+.uach-image {
+  background: url(../assets/images/uach.jfif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+
+  position: relative;
+  top: -25px;
+}

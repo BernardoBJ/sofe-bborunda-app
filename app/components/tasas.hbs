@@ -1,0 +1,30 @@
+<div class="row pr-2">
+  <div class="col col-6">
+    <Tasa::Tasa
+      @subtitle="Tasa de recuperados"
+      @color="success"
+      @title={{recoveryRate}}
+    />
+  </div>
+  <div class="col col-6">
+    <Tasa::Tasa
+      @subtitle="Tasa de muerte"
+      @color="danger"
+      @title={{deathRate}}
+    />
+  </div>
+  <div class="col col-6">
+    <Tasa::Tasa
+      @subtitle="Tasa de criticos"
+      @color="warning"
+      @title={{criticalRate}}
+    />
+  </div>
+  <div class="col col-6">
+    <Tasa::Tasa
+      @subtitle="Paises afectados"
+      @color="primary"
+      @title={{affectedCountries}}
+    />
+  </div>
+</div>
